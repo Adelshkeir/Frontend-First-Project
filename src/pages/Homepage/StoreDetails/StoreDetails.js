@@ -6,14 +6,14 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import { useQuery } from "react-query";
 
-import fruits from "../../../Images/strawberry.png";
-import vegetables from "../../../Images/vegetable.png";
-import snack from "../../../Images/snack.png";
-import canned from "../../../Images/canned-food.png";
-import dairy from "../../../Images/dairy-products.png";
-import riceandpasta from "../../../Images/rice.png";
-import drinks from "../../../Images/drink.png";
-import bread from "../../../Images/white-bread.png";
+import fruits from "Images/strawberry.png";
+import vegetables from "Images/vegetable.png";
+import snack from "Images/snack.png";
+import canned from "Images/canned-food.png";
+import dairy from "Images/dairy-products.png";
+import riceandpasta from "Images/rice.png";
+import drinks from "Images/drink.png";
+import bread from "Images/white-bread.png";
 
 const StoreDetails = () => {
   const [categoriesArray, setCategoriesArray] = useState(null);
