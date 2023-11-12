@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./admin-table.css";
 import AdminSidebar from "./AdminSidbar";
-import { Link } from "react-router-dom";
 import offerpic from "../admin/offerpic.png";
 import axios from "axios";
 import ViewOffer from "./ViewOffer";
@@ -12,7 +11,7 @@ const OffersTables = () => {
 
   useEffect(() => {
     axios
-      .get(process.env.REACT_APP_API_URL+"/product")
+      .get(process.env.REACT_APP_API_URL + "/product")
       .then((response) => {
         // Filter products to display only those with itsnew set to true
         const newProducts = response.data.filter((product) => product.itsnew);
@@ -63,7 +62,9 @@ const OffersTables = () => {
                 <td>
                   <div className="table-image">
                     <img className="table-offer-image" src={offerpic} alt="" />
-                    <span className="table-username">{product.productName}</span>
+                    <span className="table-username">
+                      {product.productName}
+                    </span>
                   </div>
                 </td>
                 <td>{product.storeID}</td>
