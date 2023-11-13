@@ -11,7 +11,7 @@ import GroceryTable from "./admin/GroceryTable";
 import CategoryTable from "./admin/CategoryTable";
 import ProductTabel from "./admin/ProductTabel";
 import ViewGrocery from "./admin/ViewGrocery";
-
+import Adminlogin from "./admin/Adminlogin"
 function App() {
   return (
     <div className="App">
@@ -19,6 +19,7 @@ function App() {
         <Navbar />
         <div className="pages">
           <Routes>
+          <Route path="/login" element={<Adminlogin />} />
             <Route path="/" element={<Home />} />
             <Route exact path="/Offers" element={<Offers />} />
             <Route path="/StoreDetails/:storeName" element={<StoreDetails />} />
